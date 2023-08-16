@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-cfdi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-bundle-tenant/appstudio/dc-metro-map-cfdi@sha256:10c59da8512b100e03eeb4c95e77f2a948be48b45e620aabf6626b7c9398c0e2
+        name: my-nodejs
+        resources: {}
+status: {}
